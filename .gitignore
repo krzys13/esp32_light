@@ -1,6 +1,42 @@
-# ======================
-# mqtt_client_py
-# ======================
-/mqtt_client_py/__pycache__/**
-/mqtt_client_py/config.py
-/mqtt_client_py/ca.crt
+
+
+
+# ==========================================================
+# Python MQTT Client
+# ==========================================================
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Local config with secrets/
+mqtt_client_py/config.py
+
+# TLS certificates
+*.crt
+.key
+*.pem
+
+
+# ==========================================================
+# esp_32_firmware (ESP-IDF)
+# ==========================================================
+
+# Build output
+build/
+
+# TLS
+components/mqtt_conn/certs/ca.pem
+
+# sdkconfig (contains WiFi / secrets)
+sdkconfig*
+
+# VSCode
+.vscode/
+
+# Logs
+*.log
+
+# OS
+Thumbs.db
+.DS_Store

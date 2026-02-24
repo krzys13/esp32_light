@@ -1,0 +1,55 @@
+
+menu "I2C menu"
+
+    config I2C_PORT
+        int "i2c port"
+        default 0
+    config I2C_SDA_GPIO 
+        int "i2c sda gpio pin"
+        default 21
+    config I2C_SCL_GPIO 
+        int "i2c scl gpio pin"
+        default 22
+endmenu
+
+menu "WiFi menu"
+
+config WIFI_SSID
+    string "WiFi SSID"
+    default ""
+
+config WIFI_PASSWORD
+    string "WiFi Password"
+    default ""
+
+config WIFI_MAXIMUM_RETRY
+    int "Maximum reconnect retries"
+    default 10
+
+config WIFI_RETRY_DELAY_MS
+    int "Maximum time delay between next connect retries in ms"
+    default 60000
+
+endmenu
+
+
+menu "MQTT menu"
+
+    config BROKER_URL
+        string "Broker URL"
+        default "mqtts://192.168.1.75:8883"
+        help
+            URL of the broker to connect to
+    
+     config BROKER_USERNAME
+        string "Broker username"
+        help
+            Username of client connecting to broker
+
+     config BROKER_PASSWORD
+        string "Broker Password"
+        help
+            Username's password of client connecting to broker
+
+
+endmenu
