@@ -26,7 +26,7 @@ mqtt_client_py/config.py
 build/
 
 # TLS
-components/mqtt_conn/certs/ca.pem
+components/mqtt_conn/certs/ca.crt
 
 # sdkconfig (contains WiFi / secrets)
 sdkconfig*
