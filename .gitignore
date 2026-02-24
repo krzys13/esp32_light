@@ -1,0 +1,6 @@
+# ======================
+# mqtt_client_py
+# ======================
+/mqtt_client_py/__pycache__/**
+/mqtt_client_py/config.py
+/mqtt_client_py/ca.crt
