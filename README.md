@@ -1,11 +1,21 @@
 # ESP32 IoT Light Monitoring System
 
-A complete IoT system based on ESP32, MQTT (TLS), Python backend client, and InfluxDB.
+Project developed as part of my university degree.
 
-The ESP32 reads light intensity from a VEML7700 sensor and publishes data securely via MQTT.
+![](images/probe2.jpg) ![](images/probe1.jpg) 
+
+
+
+A complete IoT system based on ESP32, MQTT (TLS), a Python backend client, and InfluxDB.
+
+The project consists of two main parts:
+
+- **Light Probe** – ESP32 integrated with a VEML7700 light sensor  
+- **Server** – MQTT broker, Python client, InfluxDB, and Grafana  
+
+The ESP32 reads light intensity from a VEML7700 sensor and publishes data securely via MQTT in the local Wi-fi network .
 A Python client subscribes to the MQTT topic and stores the data in InfluxDB.
 
----
 
 ## 🏗 System Architecture
 
